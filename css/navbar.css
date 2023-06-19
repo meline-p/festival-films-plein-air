@@ -1,0 +1,48 @@
+/*********************** NAVBAR ************************/
+
+header {
+    background-color: var(--purple-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: var(--white-color);
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand img {
+    height: 40px;
+}
+
+.brand h3 {
+    padding-left: 10px;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+.menu-open {
+    display: none;
+}
+
+/* Tablettes */
+@media (min-width: 768px) {
+    header .hamburger {
+        display: none;
+    }
+
+    header .menu-open {
+        display: flex;
+        list-style: none;
+    }
+
+    header .menu-open li {
+        padding: 10px 20px;
+    }
+}
