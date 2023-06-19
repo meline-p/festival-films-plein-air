@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --purple-color : #4D455D;
+    --pink-color : #E96479;
+    --blue-color : #7DB9B6;
+    --beige-color : #F5E9CF;
+    --white-color: #fff;
+}
+
+body{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+section{
+    padding:40px;
+    background-color: var(--beige-color);
+    text-align: center;
+}
+
+h1{
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    color: var(--pink-color);
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 1.2em;
+    color: var(--purple-color);
+    padding-bottom: 50px;
+}
+
+p{
+    font-size: 1em;
+    color: var(--purple-color);
+}
+
+button{
+    border: none;
+    background-color: var(--blue-color);
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: var(--white-color);
+    font-size: 1.2em;
+}
+a{
+    text-decoration: none;
+    color: var(--white-color);
+}
+.hidden {
+    display: none;
+}
+
+
+/*********************** NAVBAR ************************/
+
+header{
+    background-color: var(--purple-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: var(--white-color);
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+.brand{
+    display: flex;
+    align-items: center;
+}
+.brand img{
+    height: 40px;
+}
+.brand h3{
+    padding-left: 10px;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+.menu-open{
+    display: none;
+}
+
+/* Tablettes */
+@media (min-width: 768px){
+    header .hamburger{
+        display: none;
+    }
+    header .menu-open {
+        display: flex;
+        list-style: none;
+    }
+    header .menu-open li{
+        padding: 10px 20px;
+    }
+}
+
+/*********************** FOOTER ************************/
+footer {
+    background-color: var(--purple-color);
+    color: var(--white-color);
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer ul {
+    padding: 30px;
+    list-style: none;
+}
+
+footer p{
+    padding-top: 30px;
+    color: var(--white-color);
+}
+
+footer .pages-container li{
+    padding: 5px;
+    font-size: 0.8em;
+}
+
+footer hr{
+    width: 30%;
+    margin: auto;
+}
+
+footer .social-media-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    padding-top: 20px;
+}
+
+footer .social-media-container li{
+    padding: 10px;
+}
+
+footer .copyright{
+    font-size: 0.7em;
+}
+
+/*********************** ACTUALITES ************************/
+
+.img-content {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.text-content {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255, 0.8);
+    padding: 30px 50px;
+    border-radius: 12px;
+}
+
+/* ACTUALITES */
+.home-news-container{
+    padding: 0;
+    position: relative;
+}
+
+/* PRESENTATION DU FESTIVAL */
+.home-presentation-container{
+    padding: 0;
+    position: relative;
+}
+
+/* SELECTION DE FILMS */
+.home-selected-movies-container{
+    background-color: var(--white-color);
+}
+.home-selected-movies-container {
+    width: 100%;
+}
+.home-selected-movies-container img{
+    height: 200px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.home-selected-movies-container .movie-item{
+    margin: 0 20px;
+}
+.home-selected-movies-container .movies-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.home-selected-movies-container .movie-item .movies-infos{
+    padding-top: 10px;
+}
+.movie-item .movies-infos .title{
+    font-size: 1.1em;
+    padding-bottom: 5px;
+}
+.movie-item .movies-infos .author{
+    font-weight: 100;
+    padding-bottom: 5px;
+}
+.movie-item .movies-infos .year{
+    font-size: 0.8em;
+}
+
+/* LOCALISATION */
+
+.home-localisation-container .contact-infos-container{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+}
+
+.home-localisation-container .contact-infos-item{
+    padding: 0 10px 20px 10px;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    color: var(--purple-color);
+}
+.home-localisation-container .contact-infos-item p{
+    padding-left: 10px;
+}
+.home-localisation-container .google-map{
+    padding-top: 10px;
+    overflow: hidden;
+}
+.home-localisation-container .google-map iframe{
+    width: 90%;
+    height: 300px;
+    border-radius: 12px;
+}
+
+/* NEWSLETTER */
+.newsletter-container{
+    background-color: var(--white-color);
+}
+.newsletter-container form{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+}
+
+.newsletter-container form input{
+    font-size: 1.2em;
+    border-radius: 30px;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: none;
+    background-color: var(--pink-color);
+    color: var(--white-color);
+    transition: all 0.2s ease-in-out;
+}
+.newsletter-container form input::placeholder{
+    color: var(--white-color);
+    font-style: italic;
+}
+.newsletter-container form input:focus{
+    background-color: var(--purple-color);
+}
+
+/*********************** FILMS ************************/
+/* FILM DU JOUR */
+.movie-visualisation-container{
+    padding: 0;
+}
+.movie-visualisation-container .text-content{
+    width: 60%;
+}
+.movie-visualisation-container h1, h4 {
+    padding-bottom: 30px ;
+}
+.movie-visualisation-container .author{
+    font-weight: 100;
+    padding-bottom: 5px;
+}
+.movie-visualisation-container .year {
+    font-size: 0.8em;
+    padding-bottom: 20px;
+}
+.movie-visualisation-container .infos-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-visualisation-container .infos-content .infos-item{
+    padding:  0 20px;
+    color: var(--blue-color);
+}
+.movie-visualisation-container .infos-content .infos-item p {
+    padding-top: 10px;
+    color: var(--blue-color);
+    font-size: 1.1em;
+}
+.movie-visualisation-container .infos-content .infos-item i{
+    font-size: 1.8em;
+}
+
+/* CALENDRIER */
+.calendar-container{
+    background-color: var(--white-color);
+    padding: 10px;
+    position: sticky;
+    top: 60px;
+}
+.calendar-container .days-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 600px;
+    margin: auto;
+}
+.calendar-container .days-container .day-item{
+    border: 1px solid var(--purple-color);
+    padding: 10px 20px;
+    border-radius: 12px;
+    text-transform: uppercase;
+}
+.calendar-container .days-container .day-item .week-day{
+    font-size: 0.8em;
+    font-weight: bold;
+}
+.calendar-container .days-container .day-item .day {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.calendar-container .days-container .day-item .month {
+    font-size: 0.7em;
+    font-weight: 400;
+}
+
+/* FILMS */
+.movies-list-container .movies-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.movies-list-container .movies-container .movie-item{
+    margin: 10px;
+}
+
+.movies-list-container .movies-container .movie-item img{
+    height:300px;
+    width: 240px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 12px;
+}
