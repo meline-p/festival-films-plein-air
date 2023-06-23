@@ -1,43 +1,43 @@
 /*********************** FOOTER ************************/
 footer {
-    background-color: var(--purple-color);
-    color: var(--white-color);
-    padding: 30px 20px;
-    text-align: center;
+  background-color: var(--purple-color);
+  color: var(--white-color);
+  padding: 30px 20px;
+  text-align: center;
 }
 
 footer ul {
-    padding: 30px;
-    list-style: none;
+  padding: 30px;
+  list-style: none;
 }
 
 footer p {
-    padding-top: 30px;
-    color: var(--white-color);
+  padding-top: 30px;
+  color: var(--white-color);
 }
 
 footer .pages-container li {
-    padding: 5px;
-    font-size: 0.8em;
+  padding: 5px;
+  font-size: 0.8em;
 }
 
 footer hr {
-    width: 30%;
-    margin: auto;
+  width: 30%;
+  margin: auto;
 }
 
-footer .social-media-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.3em;
-    padding-top: 20px;
+.social-media-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+  padding-top: 20px;
 }
 
-footer .social-media-container li {
-    padding: 10px;
+.social-media-container li {
+  padding: 10px;
 }
 
 footer .copyright {
-    font-size: 0.7em;
+  font-size: 0.7em;
 }

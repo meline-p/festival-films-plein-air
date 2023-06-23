@@ -1,0 +1,17 @@
+.profil-section .email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.profil-section .email i {
+  padding-left: 20px;
+}
+
+.profil-section img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}

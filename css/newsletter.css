@@ -1,0 +1,27 @@
+/* NEWSLETTER */
+.newsletter-container {
+  background-color: var(--white-color);
+}
+.newsletter-container form {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin: auto;
+}
+
+.newsletter-container form input {
+  font-size: 1em;
+  border-radius: 30px;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 1px solid var(--pink-color);
+  color: var(--blue-color);
+  transition: all 0.2s ease-in-out;
+}
+.newsletter-container form input::placeholder {
+  color: var(--pink-color);
+}
+.newsletter-container form input:focus {
+  background-color: var(--purple-color);
+}

@@ -1,0 +1,42 @@
+.booking-container {
+  background-color: var(--white-color);
+  border-radius: 12px;
+  padding: 40px;
+}
+
+.booking-container .hour {
+  font-weight: bold;
+  font-size: 1.3em;
+  padding-top: 5px;
+}
+
+.booking-container hr {
+  width: 30%;
+  margin: 20px auto;
+}
+
+.booking-container img {
+  height: 150px;
+  width: 150px;
+  border-radius: 12px;
+}
+
+.booking-container .title {
+  padding-top: 10px;
+  font-size: 1.3em;
+  font-weight: 100;
+}
+
+.booking-container .address {
+  padding-bottom: 20px;
+}
+
+.clic-to-book {
+  text-align: center;
+}
+
+.clic-to-book .login-button {
+  background-color: var(--pink-color);
+  margin-bottom: 40px;
+  margin-right: 20px;
+}

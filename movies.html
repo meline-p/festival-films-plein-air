@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width" />
-    <title>Festival</title>
+    <title>Films</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/png" href="logo.png" />
     <link
@@ -32,7 +32,7 @@
       </div>
     </header>
 
-    <section class="movie-visualisation-container">
+    <section class="hero-linear-section">
       <img
         class="img-content"
         src="https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1456&q=80"
@@ -45,11 +45,21 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
           ipsam.
         </h4>
+        <div class="movies-projection">
+          <div class="date-hour">
+            <i class="fa-solid fa-calendar"></i>
+            <p>samedi 5 août</p>
+          </div>
+          <div class="date-hour">
+            <i class="fa-solid fa-clock"></i>
+            <p>18:00</p>
+          </div>
+        </div>
         <div class="infos-content">
-            <a href="booking.html" class="infos-item">
-                <i class="fa-solid fa-circle-plus"></i>
-                <p>Réserver</p>
-            </a>
+          <a href="booking.html" class="infos-item">
+            <i class="fa-solid fa-circle-plus"></i>
+            <p>Réserver</p>
+          </a>
         </div>
       </div>
     </section>
@@ -79,48 +89,97 @@
       </div>
     </section>
 
-    <section class="movies-list-container">
-      <div class="movies-container">
-        <a href="movie-visualisation.html" class="movie-item">
-          <img
-            src="https://images.unsplash.com/photo-1613059550870-63bbef4744e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
-          />
-          <div class="movies-infos">
-            <p class="title">Titre du Film</p>
-            <p class="author">Auteur du film</p>
-            <p class="year">2023</p>
-          </div>
-        </a>
-        <a href="movie-visualisation.html" class="movie-item">
-          <img
-            src="https://images.unsplash.com/photo-1613059550870-63bbef4744e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
-          />
-          <div class="movies-infos">
-            <p class="title">Titre du Film</p>
-            <p class="author">Auteur du film</p>
-            <p class="year">2023</p>
-          </div>
-        </a>
-        <a href="movie-visualisation.html" class="movie-item">
-          <img
-            src="https://images.unsplash.com/photo-1613059550870-63bbef4744e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
-          />
-          <div class="movies-infos">
-            <p class="title">Titre du Film</p>
-            <p class="author">Auteur du film</p>
-            <p class="year">2023</p>
-          </div>
-        </a>
-        <a href="movie-visualisation.html" class="movie-item">
-          <img
-            src="https://images.unsplash.com/photo-1613059550870-63bbef4744e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
-          />
-          <div class="movies-infos">
-            <p class="title">Titre du Film</p>
-            <p class="author">Auteur du film</p>
-            <p class="year">2023</p>
-          </div>
-        </a>
+    <section class="container-section">
+      <div class="container">
+        <div class="item">
+          <a href="movie-visualisation.html">
+            <img
+              src="https://images.unsplash.com/photo-1613059550870-63bbef4744e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+            />
+            <div class="infos">
+              <p class="title">Titre du Film</p>
+              <p class="author">Auteur du film</p>
+              <p class="year">2023</p>
+            </div>
+            <div class="movies-projection">
+              <div class="date-hour">
+                <i class="fa-solid fa-calendar"></i>
+                <p>samedi 5 août</p>
+              </div>
+              <div class="date-hour">
+                <i class="fa-solid fa-clock"></i>
+                <p>18:00</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a href="movie-visualisation.html">
+            <img
+              src="https://images.unsplash.com/photo-1613059550870-63bbef4744e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+            />
+            <div class="infos">
+              <p class="title">Titre du Film</p>
+              <p class="author">Auteur du film</p>
+              <p class="year">2023</p>
+            </div>
+            <div class="movies-projection">
+              <div class="date-hour">
+                <i class="fa-solid fa-calendar"></i>
+                <p>samedi 5 août</p>
+              </div>
+              <div class="date-hour">
+                <i class="fa-solid fa-clock"></i>
+                <p>18:00</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a href="movie-visualisation.html">
+            <img
+              src="https://images.unsplash.com/photo-1613059550870-63bbef4744e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+            />
+            <div class="infos">
+              <p class="title">Titre du Film</p>
+              <p class="author">Auteur du film</p>
+              <p class="year">2023</p>
+            </div>
+            <div class="movies-projection">
+              <div class="date-hour">
+                <i class="fa-solid fa-calendar"></i>
+                <p>samedi 5 août</p>
+              </div>
+              <div class="date-hour">
+                <i class="fa-solid fa-clock"></i>
+                <p>18:00</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a href="movie-visualisation.html">
+            <img
+              src="https://images.unsplash.com/photo-1613059550870-63bbef4744e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+            />
+            <div class="infos">
+              <p class="title">Titre du Film</p>
+              <p class="author">Auteur du film</p>
+              <p class="year">2023</p>
+            </div>
+            <div class="movies-projection">
+              <div class="date-hour">
+                <i class="fa-solid fa-calendar"></i>
+                <p>samedi 5 août</p>
+              </div>
+              <div class="date-hour">
+                <i class="fa-solid fa-clock"></i>
+                <p>18:00</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
     </section>
 
     <footer>
