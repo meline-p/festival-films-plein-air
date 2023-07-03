@@ -63,8 +63,12 @@ form {
   border: 1px solid var(--pink-color);
 }
 
-.signup:hover .signup-form {
+.login-signup-container:has(.signup:hover) .signup-form {
   display: block;
+}
+
+.login-signup-container:has(.signup:hover) .login-form {
+  display: none;
 }
 
 @media (min-width: 768px) {
