@@ -60,6 +60,8 @@ button {
   border-radius: 30px;
   color: var(--white-color);
   font-size: 1.2em;
+  width: fit-content;
+  margin: 20px auto;
 }
 
 a {
@@ -97,6 +99,33 @@ img {
   background-color: rgb(255, 255, 255, 0.8);
   padding: 30px 50px;
   border-radius: 12px;
+}
+
+/* Tablettes */
+@media (min-width: 768px) {
+  .hero-section .img-content {
+    opacity: 1;
+  }
+
+  .hero-section .text-content {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    height: 100vh;
+    background-color: rgb(255, 255, 255, 0.9);
+    padding: 30px 50px;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .right-content {
+    left: auto !important;
+    right: 0 !important;
+  }
 }
 
 /***********************  MOVIES AND NEWS SECTION ************************/
@@ -230,6 +259,29 @@ img {
 .itinerary {
   margin-top: 20px;
 }
+button.itinerary {
+  font-size: 0.8em;
+  padding: 5px 20px;
+}
+
+@media (min-width: 768px) {
+  .full-contact-container {
+    display: flex;
+  }
+
+  .google-map {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .google-map iframe {
+    height: 200px;
+    border-radius: 12px;
+  }
+}
 
 /*********************** HERO MOVIES AND NEWS SECTION ************************/
 
@@ -317,4 +369,34 @@ img {
 }
 .hero-linear-section .infos-content .infos-item i {
   font-size: 1.8em;
+}
+
+@media (min-width: 768px) {
+  .hero-linear-section .text-content {
+    width: 60%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      -90deg,
+      rgba(77, 69, 93, 0) 0%,
+      rgba(77, 69, 93, 0.9) 30%,
+      rgba(77, 69, 93, 1) 40%
+    );
+    padding: 30px 50px;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero-linear-section img {
+    height: 100vh;
+    margin-left: 30%;
+    width: 70%;
+    object-fit: cover;
+  }
 }

@@ -28,47 +28,67 @@
           <li><a href="news.html">Actualités</a></li>
           <li><a href="movies.html">Films</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li class="login">
+            <a href="login-signup.html">S'inscrire / se connecter</a>
+          </li>
         </ul>
       </div>
     </header>
 
-    <section class="padding">
-      <h1>Réserver ma séance</h1>
+    <section class="padding booking-section">
+      <h1 class="booking-title">Réserver ma séance</h1>
       <div class="booking-container">
-        <p class="day">samedi 5 août</p>
-        <p class="hour">18:00</p>
-        <hr />
-        <img
-          src="https://images.unsplash.com/photo-1613059550870-63bbef4744e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
-        />
-        <p class="title">Titre du film</p>
-        <hr />
-        <div class="google-map">
+        <div class="booking-container-item">
+          <div>
+            <p class="day">samedi 5 août</p>
+            <p class="hour">18:00</p>
+            <hr />
+            <img src="img/90.jpeg" />
+            <p class="title">Titre du film</p>
+          </div>
+          <hr />
           <p class="address">Parc Monceau, Paris</p>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.8735535538012!2d2.3063800755551815!3d48.87968699920878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc%20Monceau!5e0!3m2!1sfr!2sfr!4v1687025736920!5m2!1sfr!2sfr"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-          <button class="itinerary"><a href="#">Voir l'itinéraire</a></button>
+        </div>
+      </div>
+
+      <div class="clic-to-book">
+        <div class="clic-to-book-container">
+          <form>
+            <h3>S'inscrire / se connecter</h3>
+            <div class="clic-to-book-input-container">
+              <input type="email" placeholder="Votre email" />
+              <input type="password" placeholder="Mot de passe" />
+              <button type="submit" class="login-button">
+                <a href="confirmation.html">Réserver ma séance</a>
+              </button>
+            </div>
+          </form>
+
+          <form>
+            <h3>Continuer sans se connecter</h3>
+            <div class="clic-to-book-input-container">
+              <input type="email" placeholder="Votre email" />
+              <button type="submit" class="login-button">
+                <a href="confirmation.html">Continuer sans se se connecter</a>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
 
-    <section class="clic-to-book">
-      <div>
-        <button class="login-button">
-          <a href="confirmation.html">Se connecter</a>
-        </button>
-        <button class="no-login-button">
-          <a href="confirmation.html">Continuer sans se se connecter</a>
-        </button>
-      </div>
-    </section>
+    <div class="google-map booking-google-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.8735535538012!2d2.3063800755551815!3d48.87968699920878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc%20Monceau!5e0!3m2!1sfr!2sfr!4v1687025736920!5m2!1sfr!2sfr"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <button class="itinerary"><a href="#">Voir l'itinéraire</a></button>
+    </div>
 
     <footer>
       <h2>Les Films de Plein Air</h2>

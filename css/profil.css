@@ -1,3 +1,8 @@
+.profil-page {
+  display: flex;
+  flex-direction: column;
+}
+
 .profil-section .email {
   display: flex;
   justify-content: center;
@@ -14,4 +19,30 @@
   width: 50px;
   border-radius: 50%;
   margin-bottom: 20px;
+}
+
+/* Tablettes */
+@media (min-width: 768px) {
+  .profil-page {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .profil-section {
+    width: 30%;
+  }
+  .profil-section img {
+    height: 100px;
+    width: 100px;
+    margin-top: 20px;
+  }
+  .profil-section .email,
+  .profil-section p,
+  .profil-section .email i {
+    padding-top: 20px;
+  }
+
+  .container-section.profil {
+    width: 70%;
+    padding-top: 80px;
+  }
 }

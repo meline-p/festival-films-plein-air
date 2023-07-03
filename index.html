@@ -28,6 +28,9 @@
           <li><a href="news.html">Actualités</a></li>
           <li><a href="movies.html">Films</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li class="login">
+            <a href="login-signup.html">S'inscrire / se connecter</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -54,7 +57,7 @@
         class="img-content"
         src="https://images.unsplash.com/photo-1527979809431-ea3d5c0c01c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1509&q=80"
       />
-      <div class="text-content">
+      <div class="text-content right-content">
         <h1>Le Festival <br />Les Films de Plein Air</h1>
         <h4>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
@@ -80,9 +83,7 @@
       <div class="container">
         <div class="item">
           <a href="movie-visualisation.html">
-            <img
-              src="https://images.unsplash.com/photo-1613059550870-63bbef4744e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
-            />
+            <img src="img/grace-a-dieu.jpeg" />
             <div class="infos">
               <p class="title">Titre du Film</p>
               <p class="author">Auteur du film</p>
@@ -102,9 +103,7 @@
         </div>
         <div class="item">
           <a href="movie-visualisation.html">
-            <img
-              src="https://images.unsplash.com/photo-1613059550870-63bbef4744e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
-            />
+            <img src="img/la-mule.jpeg" />
             <div class="infos">
               <p class="title">Titre du Film</p>
               <p class="author">Auteur du film</p>
@@ -127,34 +126,36 @@
 
     <section class="localisation-container-section">
       <h1>Comment nous trouver</h1>
-      <div class="contact-infos-container">
-        <a
-          href="mailto:contact@lesfilmsdepleinAir.org"
-          class="contact-infos-item"
-        >
-          <i class="fa-solid fa-envelope"></i>
-          <p>festival-lesfilmsdepleinair@gmail.com</p>
-        </a>
-        <a href="tel:+33606060606" class="contact-infos-item">
-          <i class="fa-solid fa-phone"></i>
-          <p>06 06 06 06 06</p>
-        </a>
-        <div class="contact-infos-item">
-          <i class="fa-solid fa-location-dot"></i>
-          <p>Parc Monceau, Paris</p>
+      <div class="full-contact-container">
+        <div class="contact-infos-container">
+          <a
+            href="mailto:contact@lesfilmsdepleinAir.org"
+            class="contact-infos-item"
+          >
+            <i class="fa-solid fa-envelope"></i>
+            <p>festival-lesfilmsdepleinair@gmail.com</p>
+          </a>
+          <a href="tel:+33606060606" class="contact-infos-item">
+            <i class="fa-solid fa-phone"></i>
+            <p>06 06 06 06 06</p>
+          </a>
+          <div class="contact-infos-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Parc Monceau, Paris</p>
+          </div>
         </div>
-      </div>
-      <div class="google-map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.8735535538012!2d2.3063800755551815!3d48.87968699920878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc%20Monceau!5e0!3m2!1sfr!2sfr!4v1687025736920!5m2!1sfr!2sfr"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-        <button class="itinerary"><a href="#">Voir l'itinéraire</a></button>
+        <div class="google-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.8735535538012!2d2.3063800755551815!3d48.87968699920878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc%20Monceau!5e0!3m2!1sfr!2sfr!4v1687025736920!5m2!1sfr!2sfr"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <button class="itinerary"><a href="#">Voir l'itinéraire</a></button>
+        </div>
       </div>
     </section>
 

@@ -4,7 +4,8 @@
 
 .login-signup-container {
   background-color: var(--white-color);
-  width: 80%;
+  width: 100%;
+  max-width: 450px;
   margin: 20px auto 10px;
   border-radius: 12px;
   overflow: hidden;
@@ -39,9 +40,35 @@ form {
   padding: 30px 40px 10px;
 }
 
+.signup-form {
+  display: none;
+}
+
+.signup-form .form-input-container .form-input-item {
+  border: 1px solid var(--blue-color);
+}
+
+.signup-form .form-input-container .form-input-item::placeholder {
+  color: var(--blue-color);
+}
+
+.signup-form button {
+  background-color: var(--blue-color) !important;
+}
+
 .form-input-container .form-input-item {
   margin-bottom: 20px;
   padding: 10px;
   border-radius: 12px;
   border: 1px solid var(--pink-color);
+}
+
+.signup:hover .signup-form {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .login-signup-container {
+    margin: 5px auto;
+  }
 }

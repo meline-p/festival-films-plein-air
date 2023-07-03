@@ -1,6 +1,7 @@
 .confirmation-section {
   padding: 0;
   margin: 0;
+  height: fit-content;
 }
 .confirmation-section p {
   padding-bottom: 30px;
@@ -14,18 +15,18 @@
   padding-bottom: 40px;
   padding-left: 0;
   padding-right: 0;
-}
-
-.img-title-container {
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .confirmation-container .infos-container {
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
   width: 100%;
-  transform: translate(-50%, 0);
+}
+
+.confirmation-container .infos-container-item {
+  position: absolute;
+  top: 150px;
+  width: 100%;
   background: (255, 255, 255);
   background: linear-gradient(
     rgba(255, 255, 255, 0) 0%,
@@ -44,13 +45,25 @@
   font-size: 1.2em;
 }
 
-.confirmation-container .google-map {
-  padding-bottom: 40px;
+.confirmation-container .infos-container .buttons > * {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 1em;
 }
 
-.confirmation-container hr {
+.confirmation-container .infos-container .buttons hr {
   width: 30%;
-  margin: auto;
+  margin: 30px auto;
+  padding: 0;
+}
+
+.confirmation-container .infos-container .buttons {
+  display: flex;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
 }
 
 .confirmation-container .add-to-calendar-button {
@@ -60,16 +73,26 @@
   border: 1px solid var(--pink-color);
 }
 
+.confirmation-container .add-to-calendar-button a {
+  color: var(--pink-color);
+}
+
 .confirmation-container .download-ebillet {
-  padding: 30px 0 5px 0;
+  padding: 50px 0 5px 0;
   margin: 0;
 }
+
 .confirmation-container .download-ebillet-button {
   background-color: var(--pink-color);
 }
 
-.share h1 {
-  padding-bottom: 30px;
+.share {
+  position: static;
+}
+
+.padding .share h1 {
+  padding-top: 60px;
+  padding-bottom: 0;
 }
 
 .share .social-media-container li i {
@@ -77,6 +100,100 @@
 }
 
 .social-media-container {
-  padding: 30px;
+  padding: 0 30px;
   list-style: none;
+}
+
+.newsletter-container.bg-beige {
+  background-color: var(--beige-color);
+}
+
+@media (min-width: 768px) {
+  .confirmation-section {
+    height: 100vh;
+  }
+  .confirmation-container {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+    position: relative;
+    padding: 0 20px;
+  }
+
+  .confirmation-container > * {
+    padding: 10px 20px;
+  }
+
+  .confirmation-container .infos-container {
+    position: static;
+    transform: translate(0, 0);
+    background: transparent;
+    width: auto;
+  }
+
+  .confirmation-container .infos-container-item {
+    position: static;
+    top: auto;
+    background: transparent;
+  }
+
+  .confirmation-container .infos-container .title {
+    padding-bottom: 10px;
+    font-weight: 100;
+  }
+
+  .confirmation-container .infos-container .buttons {
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 30px;
+  }
+
+  .confirmation-container .infos-container .buttons > * {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+
+  .infos-container-item {
+    text-align: left;
+  }
+
+  .confirmation-container img {
+    height: 350px;
+    width: 25%;
+    padding: 0;
+    margin: 10px 20px;
+    border-radius: 12px;
+  }
+
+  .confirmation-container hr {
+    display: none;
+  }
+
+  .confirmation-container .title {
+    padding-top: 10px;
+    font-size: 1.2em;
+  }
+
+  section .share {
+    width: 25%;
+    background-color: var(--white-color);
+    border-radius: 12px;
+    margin: 20px;
+  }
+
+  .padding .share h1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .newsletter-container.bg-beige {
+    background-color: var(--white-color);
+  }
 }
