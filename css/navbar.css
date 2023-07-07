@@ -31,11 +31,71 @@ header {
   display: none;
 }
 
-.menu-open .login a {
+header:hover ~ .menu-xs-container,
+.menu-xs-container:hover {
+  display: block;
+}
+
+.menu-xs-container {
+  display: none;
+  position: relative;
+  height: 70vh;
+  background-color: var(--blue-color);
+  z-index: 9;
+}
+
+.menu-xs-open {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100vh;
+  width: 100%;
+  display: none;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-xs-open li:not(:last-child) a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--white-color);
+  transition: width 0.3s ease-in-out;
+}
+
+.menu-xs-open li {
+  padding: 20px;
+}
+
+.menu-open .login a,
+.menu-xs-open .login a {
   color: var(--purple-color);
   background-color: var(--white-color);
   padding: 10px 20px;
   border-radius: 30px;
+  transition: all 0.2s ease-in;
+}
+
+.menu-open .login a:hover,
+.menu-xs-open .login a:hover {
+  background-color: var(--pink-color);
+  color: var(--white-color);
+}
+
+.menu-xs-open li:not(:last-child) a {
+  position: relative;
+  transition: all 0.2s ease-in;
+}
+
+.menu-xs-open li:not(:last-child) a:hover::after {
+  width: 100%;
 }
 
 /* Tablettes */
@@ -44,12 +104,42 @@ header {
     display: none;
   }
 
-  header .menu-open {
+  header:hover ~ .menu-xs-container {
+    display: none;
+  }
+
+  .menu-xs-container {
+    display: none;
+  }
+
+  header .menu-open,
+  .menu-xs-open {
     display: flex;
     list-style: none;
   }
 
-  header .menu-open li {
+  header .menu-open li,
+  .menu-xs-open li {
     padding: 10px 20px;
+  }
+
+  header .menu-open li:not(:last-child) a {
+    position: relative;
+    transition: all 0.2s ease-in;
+  }
+
+  header .menu-open li:not(:last-child) a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--white-color);
+    transition: width 0.3s ease-in-out;
+  }
+
+  header .menu-open li:not(:last-child) a:hover::after {
+    width: 100%;
   }
 }

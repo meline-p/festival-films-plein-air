@@ -4,6 +4,7 @@
   padding: 10px;
   position: sticky;
   top: 60px;
+  z-index: 5;
 }
 .calendar-container .days-container {
   display: flex;
@@ -17,6 +18,8 @@
   padding: 10px 20px;
   border-radius: 12px;
   text-transform: uppercase;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
 }
 .calendar-container .days-container .day-item .week-day {
   font-size: 0.8em;
@@ -29,4 +32,16 @@
 .calendar-container .days-container .day-item .month {
   font-size: 0.7em;
   font-weight: 400;
+}
+
+.day-item:hover {
+  background-color: var(--purple-color);
+}
+
+.day-item p {
+  transition: all 0.2s ease-in;
+}
+
+.day-item:hover p {
+  color: var(--white-color);
 }

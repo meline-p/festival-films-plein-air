@@ -14,6 +14,11 @@ form .contact {
   color: var(--blue-color);
 }
 
+.form-input input,
+.form-input textarea {
+  color: var(--pink-color);
+}
+
 form input::placeholder,
 form textarea::placeholder {
   color: var(--pink-color);
@@ -23,6 +28,13 @@ form input:focus {
   border: 2px solid var(--blue-color);
 }
 
-form button {
+/* form button {
   background-color: var(--pink-color);
+} */
+
+@media (min-width: 768px) {
+  form .contact {
+    width: 40%;
+    margin: 10px auto;
+  }
 }

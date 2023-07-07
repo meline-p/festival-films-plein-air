@@ -31,7 +31,6 @@ footer hr {
   justify-content: center;
   align-items: center;
   font-size: 1.3em;
-  padding-top: 20px;
 }
 
 .social-media-container li {
@@ -40,4 +39,41 @@ footer hr {
 
 footer .copyright {
   font-size: 0.7em;
+}
+
+.pages-container li a {
+  position: relative;
+  transition: all 0.2s ease-in;
+}
+
+.pages-container li a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--white-color);
+  transition: width 0.3s ease-in-out;
+}
+
+.pages-container li a:hover::after {
+  width: 100%;
+}
+
+.social-media-container li {
+  transform: scale(1);
+  transition: all 0.2s ease-in;
+}
+
+.social-media-container li:hover {
+  transform: scale(1.1);
+}
+
+.social-media-container li:hover a {
+  color: var(--blue-color);
+}
+
+.copyright {
+  padding-top: 30px;
 }

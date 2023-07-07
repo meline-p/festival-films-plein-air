@@ -62,6 +62,14 @@ button {
   font-size: 1.2em;
   width: fit-content;
   margin: 20px auto;
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 0.2s ease-in;
+}
+
+button:hover {
+  background-color: var(--pink-color);
+  transform: scale(1.05);
 }
 
 a {
@@ -77,17 +85,89 @@ img {
   display: none;
 }
 
+.pink-button {
+  background-color: var(--pink-color);
+  color: var(--white-color);
+}
+.pink-button:hover {
+  background-color: var(--purple-color);
+}
+
+.pink-outline-button {
+  background-color: var(--white-color);
+  color: var(--pink-color);
+  border: 1px solid var(--pink-color);
+}
+.pink-outline-button a {
+  color: var(--pink-color);
+  transition: all 0.2s ease-in;
+}
+.pink-outline-button:hover a {
+  color: var(--purple-color);
+}
+.pink-outline-button:hover {
+  background-color: var(--white-color);
+  border: 1px solid var(--purple-color);
+}
 /*********************** HERO SECTION ************************/
 
 .hero-section {
   padding: 0;
   position: relative;
+  overflow: hidden;
+}
+
+.hero-section .image-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.hero-section .image-container .image-wrapper {
+  display: flex;
+  animation: slide 16s infinite;
+}
+
+.image-wrapper img {
+  height: 100vh;
+  min-width: 100vw;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(0);
+  }
+  30% {
+    transform: translate(-100vw);
+  }
+  45% {
+    transform: translate(-100vw);
+  }
+  55% {
+    transform: translate(-200vw);
+  }
+  70% {
+    transform: translate(-200vw);
+  }
+  75% {
+    transform: translate(-300vw);
+  }
+  90% {
+    transform: translate(-300vw);
+  }
+  100% {
+    transform: translate(0);
+  }
 }
 
 .hero-section .img-content {
-  width: 100%;
   height: 100vh;
-  opacity: 0.5;
+  width: 100%;
+  object-fit: cover;
+  transform: scaleX(-1);
 }
 
 .hero-section .text-content {
@@ -150,11 +230,21 @@ img {
   padding-bottom: 20px;
   border-radius: 12px;
   overflow: hidden;
-  width: 300px;
+  width: 250px;
+}
+
+.container .item {
+  transform: scale(1);
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.container .item:hover {
+  transform: scale(1.05);
 }
 
 .container-section .container .item img {
-  height: 350px;
+  height: 300px;
   width: 100%;
   margin-bottom: 10px;
   border-radius: 0px;
@@ -195,7 +285,6 @@ img {
 .container-section .container .item .movies-projection {
   padding: 20px 20px 0px 20px;
 }
-
 /***********************  NEWS  ************************/
 .container-section .container .news-item img {
   height: 200px;
@@ -223,6 +312,10 @@ img {
 
 .contact-section h4 {
   padding-bottom: 30px;
+}
+
+.contact-section p {
+  padding-bottom: 20px;
 }
 
 .contact-section .contact-infos-container {
@@ -269,7 +362,7 @@ button.itinerary {
     display: flex;
   }
 
-  .google-map {
+  .localisation-container-section .google-map {
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -277,9 +370,19 @@ button.itinerary {
     align-items: center;
   }
 
-  .google-map iframe {
+  .localisation-container-section .google-map iframe {
     height: 200px;
     border-radius: 12px;
+  }
+
+  .localisation-container-section .contact-flex-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .localisation-container-section .contact-infos-container {
+    margin: 20px;
   }
 }
 
@@ -288,6 +391,7 @@ button.itinerary {
 .hero-linear-section {
   padding: 0;
   display: flex;
+  transition: all 0.5s ease-in;
 }
 
 .hero-linear-section img {
@@ -361,11 +465,45 @@ button.itinerary {
 .hero-linear-section .infos-content .infos-item {
   padding: 0 20px;
   color: var(--blue-color);
+  transition: all 0.2s ease-in;
 }
+
+.hero-linear-section .infos-content .infos-item:hover {
+  color: var(--pink-color);
+}
+
+.hidden-content {
+  display: none;
+  color: var(--white-color);
+  transition: all 0.5s ease-in;
+  background-color: var(--purple-color);
+  font-size: 1em;
+  font-weight: 200;
+}
+
+.hidden-content h3 {
+  padding-bottom: 20px;
+}
+
+.hidden-content h3,
+.hidden-content p {
+  color: var(--white-color);
+  text-align: left;
+}
+
+.hero-linear-section:hover ~ .hidden-content,
+.hero-linear-section:focus-within ~ .hidden-content {
+  display: block;
+}
+
 .hero-linear-section .infos-content .infos-item p {
   padding-top: 10px;
   color: var(--blue-color);
   font-size: 1em;
+  transition: all 0.2s ease-in;
+}
+.hero-linear-section .infos-content .infos-item:hover p {
+  color: var(--pink-color);
 }
 .hero-linear-section .infos-content .infos-item i {
   font-size: 1.8em;
@@ -399,4 +537,35 @@ button.itinerary {
     width: 70%;
     object-fit: cover;
   }
+}
+
+/*********************** QUOTE ************************/
+
+blockquote {
+  quotes: "“" "”";
+  position: relative;
+}
+.quote {
+  background-color: var(--blue-color);
+}
+.quote h4 {
+  padding: 80px;
+  color: var(--white-color);
+}
+blockquote:before,
+blockquote:after {
+  content: "";
+  position: absolute;
+  font-size: 8em;
+  color: var(--white-color);
+}
+blockquote:before {
+  content: open-quote;
+  left: 5%;
+  top: 0%;
+}
+blockquote:after {
+  content: close-quote;
+  right: 5%;
+  bottom: 0%;
 }
