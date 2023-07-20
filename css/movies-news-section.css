@@ -1,0 +1,93 @@
+/***********************  MOVIES AND NEWS SECTION ************************/
+
+.bg-white {
+  background-color: var(--white-color);
+}
+.bg-white .item {
+  background-color: var(--beige-color) !important;
+}
+
+.container-section .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: first baseline;
+}
+
+.container-section .container .item {
+  margin: 10px;
+  background-color: var(--white-color);
+  padding-bottom: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 250px;
+}
+
+.container .item {
+  transform: scale(1);
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.container .item:hover {
+  transform: scale(1.05);
+}
+
+.container-section .container .item img {
+  height: 300px;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 0px;
+}
+
+.container-section .container .item .infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: baseline;
+  padding: 10px 20px 0px 20px;
+}
+.container-section .container .item .infos .title {
+  font-size: 1.2em;
+  padding-bottom: 5px;
+}
+.container-section .container .item .infos .author {
+  font-weight: 100;
+  padding-bottom: 5px;
+}
+.container-section .container .item .infos .year {
+  font-size: 0.8em;
+}
+
+.container-section .container .item .date-hour {
+  display: flex;
+  color: var(--purple-color);
+  justify-content: left;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.container-section .container .item i {
+  padding-right: 10px;
+}
+
+/***********************  MOVIES  ************************/
+.container-section .container .item .movies-projection {
+  padding: 20px 20px 0px 20px;
+}
+/***********************  NEWS  ************************/
+.container-section .container .news-item img {
+  height: 200px;
+}
+.container-section .container .extrait {
+  text-align: left;
+  font-size: 1em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.container-section .container a {
+  color: var(--blue-color);
+  text-align: center;
+  margin: auto;
+  font-size: 0.8em;
+}

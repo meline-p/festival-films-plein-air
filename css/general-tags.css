@@ -1,0 +1,56 @@
+/*********************** GENERAL ************************/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --purple-color: #4d455d;
+  --pink-color: #e96479;
+  --blue-color: #7db9b6;
+  --beige-color: #f5e9cf;
+  --white-color: #fff;
+}
+
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+section {
+  padding: 40px;
+  background-color: var(--beige-color);
+  text-align: center;
+}
+
+h1 {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  color: var(--pink-color);
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 1.2em;
+  color: var(--purple-color);
+  padding-bottom: 50px;
+}
+
+p {
+  font-size: 1em;
+  color: var(--purple-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+img {
+  object-fit: cover;
+}
+
+.hidden {
+  display: none;
+}

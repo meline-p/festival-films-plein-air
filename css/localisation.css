@@ -1,0 +1,83 @@
+/*********************** LOCALISATION ************************/
+.padding {
+  padding-top: 80px;
+}
+.padding h1 {
+  padding-bottom: 30px;
+}
+
+.contact-section h4 {
+  padding-bottom: 30px;
+}
+
+.contact-section p {
+  padding-bottom: 20px;
+}
+
+.contact-section .contact-infos-container {
+  padding-top: 30px;
+}
+
+.localisation-container-section .contact-infos-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: fit-content;
+  margin: auto;
+}
+
+.localisation-container-section .contact-infos-item {
+  padding: 0 10px 20px 10px;
+  display: flex;
+  justify-content: left;
+  text-align: left;
+  color: var(--purple-color);
+}
+.localisation-container-section .contact-infos-item p {
+  padding-left: 10px;
+}
+.google-map {
+  padding-top: 10px;
+  overflow: hidden;
+}
+.google-map iframe {
+  width: 90%;
+  height: 300px;
+  border-radius: 12px;
+}
+.itinerary {
+  margin-top: 20px;
+}
+button.itinerary {
+  font-size: 0.8em;
+  padding: 5px 20px;
+}
+
+@media (min-width: 768px) {
+  .full-contact-container {
+    display: flex;
+  }
+
+  .localisation-container-section .google-map {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .localisation-container-section .google-map iframe {
+    height: 200px;
+    border-radius: 12px;
+  }
+
+  .localisation-container-section .contact-flex-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .localisation-container-section .contact-infos-container {
+    margin: 20px;
+  }
+}

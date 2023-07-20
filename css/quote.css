@@ -1,0 +1,30 @@
+/*********************** QUOTE ************************/
+
+blockquote {
+  quotes: "“" "”";
+  position: relative;
+}
+.quote {
+  background-color: var(--blue-color);
+}
+.quote h4 {
+  padding: 80px;
+  color: var(--white-color);
+}
+blockquote:before,
+blockquote:after {
+  content: "";
+  position: absolute;
+  font-size: 8em;
+  color: var(--white-color);
+}
+blockquote:before {
+  content: open-quote;
+  left: 5%;
+  top: 0%;
+}
+blockquote:after {
+  content: close-quote;
+  right: 5%;
+  bottom: 0%;
+}

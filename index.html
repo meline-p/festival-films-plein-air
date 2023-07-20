@@ -1,10 +1,12 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Festival Les Films de Plein Air" />
     <title>Festival Les Films de Plein Air</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" type="image/png" href="logo.png" />
     <link
       rel="stylesheet"
@@ -16,20 +18,24 @@
   </head>
   <body>
     <header>
-      <a class="brand" href="index.html">
-        <img src="logo.png" />
+      <a class="brand" href="index.html" aria-label="index">
+        <img alt="logo" src="logo.png" />
         <h3>Les Films de Plein Air</h3>
       </a>
       <div class="menu">
         <div class="hamburger">
-          <a><i class="fa-solid fa-bars"></i></a>
+          <a href="#" aria-label="hamburger-menu">
+            <i class="fa-solid fa-bars"></i>
+          </a>
         </div>
         <ul class="menu-open">
-          <li><a href="news.html">Actualités</a></li>
-          <li><a href="movies.html">Films</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a aria-label="news" href="news.html">Actualités</a></li>
+          <li><a aria-label="movies" href="movies.html">Films</a></li>
+          <li><a aria-label="contact" href="contact.html">Contact</a></li>
           <li class="login">
-            <a href="login-signup.html">S'inscrire / se connecter</a>
+            <a aria-label="login-signup" href="login-signup.html">
+              S'inscrire / se connecter
+            </a>
           </li>
         </ul>
       </div>
@@ -37,11 +43,13 @@
 
     <section class="menu-xs-container">
       <ul class="menu-xs-open">
-        <li><a href="news.html">Actualités</a></li>
-        <li><a href="movies.html">Films</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a aria-label="news" href="news.html">Actualités</a></li>
+        <li><a aria-label="movies" href="movies.html">Films</a></li>
+        <li><a aria-label="contact" href="contact.html">Contact</a></li>
         <li class="login">
-          <a href="login-signup.html">S'inscrire / se connecter</a>
+          <a aria-label="login-signup" href="login-signup.html">
+            S'inscrire / se connecter
+          </a>
         </li>
       </ul>
     </section>
@@ -50,15 +58,19 @@
       <div class="image-container">
         <div class="image-wrapper">
           <img
+            alt="news-1"
             src="https://images.unsplash.com/photo-1468234560893-89c00b6385c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1636&q=80"
           />
           <img
+            alt="news-2"
             src="https://images.unsplash.com/photo-1600535597130-07a3c1fb40f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
           />
           <img
+            alt="news-3"
             src="https://images.unsplash.com/photo-1564914397352-f8c3881fc9c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
           />
           <img
+            alt="news-4"
             src="https://images.unsplash.com/photo-1675686803129-69fb8167f965?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1075&q=80"
           />
         </div>
@@ -70,7 +82,9 @@
           ipsam.
         </h4>
         <button>
-          <a href="news.html">Découvrir les actualités du festival</a>
+          <a aria-label="news" href="news.html"
+            >Découvrir les actualités du festival</a
+          >
         </button>
       </div>
     </section>
@@ -85,6 +99,7 @@
 
     <section class="hero-section">
       <img
+        alt="festival"
         class="img-content"
         src="https://images.unsplash.com/photo-1527979809431-ea3d5c0c01c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1509&q=80"
       />
@@ -113,8 +128,8 @@
       </h4>
       <div class="container">
         <div class="item movie">
-          <a href="movie-visualisation.html">
-            <img src="img/grace-a-dieu.jpeg" />
+          <a aria-label="movie-visualisation" href="movie-visualisation.html">
+            <img alt="grace-a-dieu-movie" src="img/grace-a-dieu.jpeg" />
             <div class="infos">
               <p class="title">Titre du Film</p>
               <p class="author">Auteur du film</p>
@@ -133,8 +148,8 @@
           </a>
         </div>
         <div class="item movie">
-          <a href="movie-visualisation.html">
-            <img src="img/la-mule.jpeg" />
+          <a aria-label="movie-visualisation" href="movie-visualisation.html">
+            <img alt="la-mule-movie" src="img/la-mule.jpeg" />
             <div class="infos">
               <p class="title">Titre du Film</p>
               <p class="author">Auteur du film</p>
@@ -160,13 +175,18 @@
       <div class="contact-flex-container">
         <div class="contact-infos-container">
           <a
+            aria-label="email"
             href="mailto:contact@lesfilmsdepleinAir.org"
             class="contact-infos-item"
           >
             <i class="fa-solid fa-envelope"></i>
             <p>festival-lesfilmsdepleinair@gmail.com</p>
           </a>
-          <a href="tel:+33606060606" class="contact-infos-item">
+          <a
+            aria-label="tel"
+            href="tel:+33606060606"
+            class="contact-infos-item"
+          >
             <i class="fa-solid fa-phone"></i>
             <p>06 06 06 06 06</p>
           </a>
@@ -177,6 +197,7 @@
         </div>
         <div class="google-map">
           <iframe
+            title="google-map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.8735535538012!2d2.3063800755551815!3d48.87968699920878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc%20Monceau!5e0!3m2!1sfr!2sfr!4v1687025736920!5m2!1sfr!2sfr"
             width="600"
             height="450"
@@ -187,7 +208,9 @@
           ></iframe>
         </div>
       </div>
-      <button><a href="contact.html">Nous contacter</a></button>
+      <button>
+        <a aria-label="contact" href="contact.html">Nous contacter</a>
+      </button>
     </section>
 
     <section class="newsletter-container">
@@ -206,28 +229,38 @@
     <footer>
       <h2>Les Films de Plein Air</h2>
       <ul class="pages-container">
-        <li><a href="news.html">Actualités</a></li>
-        <li><a href="movies.html">Films</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="#">Mentions Légales</a></li>
+        <li><a aria-label="news" href="news.html">Actualités</a></li>
+        <li><a aria-label="movies" href="movies.html">Films</a></li>
+        <li><a aria-label="contact" href="contact.html">Contact</a></li>
+        <li><a aria-label="mentions-legales" href="#">Mentions Légales</a></li>
       </ul>
       <hr />
       <p>Retrouvez-nous sur nos réseaux sociaux :</p>
       <ul class="social-media-container">
         <li>
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a aria-label="facebook" href="#"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
         </li>
         <li>
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a aria-label="instagram" href="#"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
         </li>
         <li>
-          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          <a aria-label="tiktok" href="#"
+            ><i class="fa-brands fa-tiktok"></i
+          ></a>
         </li>
         <li>
-          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a aria-label="youtube" href="#"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
         </li>
         <li>
-          <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+          <a aria-label="snapchat" href="#"
+            ><i class="fa-brands fa-snapchat"></i
+          ></a>
         </li>
       </ul>
       <div class="copyright">© Copyright 2023 - Les Films de Plein Air</div>

@@ -1,0 +1,98 @@
+/*********************** HERO SECTION ************************/
+
+.hero-section {
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section .image-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.hero-section .image-container .image-wrapper {
+  display: flex;
+  animation: slide 16s infinite;
+}
+
+.image-wrapper img {
+  height: 100vh;
+  min-width: 100vw;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(0);
+  }
+  30% {
+    transform: translate(-100vw);
+  }
+  45% {
+    transform: translate(-100vw);
+  }
+  55% {
+    transform: translate(-200vw);
+  }
+  70% {
+    transform: translate(-200vw);
+  }
+  75% {
+    transform: translate(-300vw);
+  }
+  90% {
+    transform: translate(-300vw);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.hero-section .img-content {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  transform: scaleX(-1);
+}
+
+.hero-section .text-content {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 255, 255, 0.8);
+  padding: 30px 50px;
+  border-radius: 12px;
+}
+
+/* Tablettes */
+@media (min-width: 768px) {
+  .hero-section .img-content {
+    opacity: 1;
+  }
+
+  .hero-section .text-content {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    height: 100vh;
+    background-color: rgb(255, 255, 255, 0.9);
+    padding: 30px 50px;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .right-content {
+    left: auto !important;
+    right: 0 !important;
+  }
+}

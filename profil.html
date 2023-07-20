@@ -1,10 +1,12 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Festival Les Films de Plein Air" />
     <title>Films</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" type="image/png" href="logo.png" />
     <link
       rel="stylesheet"
@@ -16,20 +18,24 @@
   </head>
   <body>
     <header>
-      <a class="brand" href="index.html">
-        <img src="logo.png" />
+      <a class="brand" href="index.html" aria-label="index">
+        <img alt="logo" src="logo.png" />
         <h3>Les Films de Plein Air</h3>
       </a>
       <div class="menu">
         <div class="hamburger">
-          <a><i class="fa-solid fa-bars"></i></a>
+          <a href="#" aria-label="hamburger-menu">
+            <i class="fa-solid fa-bars"></i>
+          </a>
         </div>
         <ul class="menu-open">
-          <li><a href="news.html">Actualités</a></li>
-          <li><a href="movies.html">Films</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a aria-label="news" href="news.html">Actualités</a></li>
+          <li><a aria-label="movies" href="movies.html">Films</a></li>
+          <li><a aria-label="contact" href="contact.html">Contact</a></li>
           <li class="login">
-            <a href="login-signup.html">S'inscrire / se connecter</a>
+            <a aria-label="login-signup" href="login-signup.html">
+              S'inscrire / se connecter
+            </a>
           </li>
         </ul>
       </div>
@@ -37,11 +43,13 @@
 
     <section class="menu-xs-container">
       <ul class="menu-xs-open">
-        <li><a href="news.html">Actualités</a></li>
-        <li><a href="movies.html">Films</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a aria-label="news" href="news.html">Actualités</a></li>
+        <li><a aria-label="movies" href="movies.html">Films</a></li>
+        <li><a aria-label="contact" href="contact.html">Contact</a></li>
         <li class="login">
-          <a href="login-signup.html">S'inscrire / se connecter</a>
+          <a aria-label="login-signup" href="login-signup.html">
+            S'inscrire / se connecter
+          </a>
         </li>
       </ul>
     </section>
@@ -49,7 +57,7 @@
     <div class="profil-page">
       <section class="bg-white padding profil-section">
         <h1>Mon Profil</h1>
-        <img src="img/joker.jpeg" />
+        <img alt="joker-movie" src="img/joker.jpeg" />
         <div class="email">
           <p>email@email.com</p>
           <i class="fa-solid fa-pen"></i>
@@ -62,8 +70,8 @@
         <h1>Mes réservations</h1>
         <div class="container">
           <div class="item">
-            <a href="movie-visualisation.html">
-              <img src="img/border.jpeg" />
+            <a aria-label="movie-visualisation" href="movie-visualisation.html">
+              <img alt="border-movie" src="img/border.jpeg" />
               <div class="infos">
                 <p class="title">Titre du Film</p>
                 <p class="author">Auteur du film</p>
@@ -82,8 +90,8 @@
             </a>
           </div>
           <div class="item">
-            <a href="movie-visualisation.html">
-              <img src="img/jeanne.jpeg" />
+            <a aria-label="movie-visualisation" href="movie-visualisation.html">
+              <img alt="jeanne-movie" src="img/jeanne.jpeg" />
               <div class="infos">
                 <p class="title">Titre du Film</p>
                 <p class="author">Auteur du film</p>
@@ -104,31 +112,42 @@
         </div>
       </section>
     </div>
+
     <footer>
       <h2>Les Films de Plein Air</h2>
       <ul class="pages-container">
-        <li><a href="news.html">Actualités</a></li>
-        <li><a href="movies.html">Films</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="#">Mentions Légales</a></li>
+        <li><a aria-label="news" href="news.html">Actualités</a></li>
+        <li><a aria-label="movies" href="movies.html">Films</a></li>
+        <li><a aria-label="contact" href="contact.html">Contact</a></li>
+        <li><a aria-label="mentions-legales" href="#">Mentions Légales</a></li>
       </ul>
       <hr />
       <p>Retrouvez-nous sur nos réseaux sociaux :</p>
       <ul class="social-media-container">
         <li>
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a aria-label="facebook" href="#"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
         </li>
         <li>
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a aria-label="instagram" href="#"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
         </li>
         <li>
-          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          <a aria-label="tiktok" href="#"
+            ><i class="fa-brands fa-tiktok"></i
+          ></a>
         </li>
         <li>
-          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a aria-label="youtube" href="#"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
         </li>
         <li>
-          <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+          <a aria-label="snapchat" href="#"
+            ><i class="fa-brands fa-snapchat"></i
+          ></a>
         </li>
       </ul>
       <div class="copyright">© Copyright 2023 - Les Films de Plein Air</div>
