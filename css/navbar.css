@@ -59,6 +59,10 @@ header:hover ~ .menu-xs-container,
   align-items: center;
 }
 
+.menu-xs-open .login {
+  width: 100%;
+}
+
 .menu-xs-open li:not(:last-child) a::after {
   content: "";
   position: absolute;
